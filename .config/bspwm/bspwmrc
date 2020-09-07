@@ -1,0 +1,38 @@
+#! /bin/sh
+
+# startup programs
+~/.config/polybar/launch.sh &
+nitrogen --set-zoom-fill --random ~/Pictures/wallpapers/
+# nitrogen --restore &
+sxhkd &
+picom &
+dunst & # TODO: make dunstrc
+numlockx on &
+
+# autolock after 10 min, lock is custom executable
+# http://plankenau.com/blog/post/gaussianlock
+# ignore lock on bottom left corner
+xautolock -time 10 -locker lock -corners 000- &
+xrandr --rate 120 &
+
+bspc config pointer_modifier mod4 # TODO: why doesn't mod4 work?
+bspc config pointer_action1 move
+bspc config pointer_action2 resize_side
+bspc config pointer_action3 resize_corner
+
+bspc monitor -d TTY WEB LAB MED ETC
+
+bspc config border_width         2
+bspc config window_gap          12
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      false
+bspc config paddinless_monocle   true
+
+bspc rule -a Gimp desktop='^5' state=floating follow=on
+# bspc rule -a Chromium desktop='^2'
+bspc rule -a firefox desktop='^2'
+# bspc rule -a mplayer2 state=floating
+# bspc rule -a Kupfer.py focus=on
+# bspc rule -a Screenkey manage=off

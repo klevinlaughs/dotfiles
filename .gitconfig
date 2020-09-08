@@ -35,12 +35,12 @@
 	whitespace = red reverse
 
 [core]
-    pager = delta
+  pager = delta
 
 [delta]
-    plus-color = "#012800"
-    minus-color = "#340001"
-    syntax-theme = Monokai Extended
+  plus-color = "#012800"
+  minus-color = "#340001"
+  syntax-theme = Monokai Extended
 
 [interactive]
-    diffFilter = delta --color-only
+  diffFilter = delta --color-only

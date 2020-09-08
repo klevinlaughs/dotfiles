@@ -1,0 +1,12 @@
+{
+  "stylelint.filetypes": [
+    "css",
+    "scss",
+    "less"
+  ],
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  "prettier.trailingComma": "none",
+  "prettier.printWidth": 120,
+  "prettier.tabWidth": 4
+}

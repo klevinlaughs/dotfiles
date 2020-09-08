@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='C:/Data/Solutions/TradeMe.FrEnd'
+let g:netrw_dirhist_1='C:/Data/Solutions/TradeMe.FrEnd/packages/frend/web/client/src/app/Property/listing/gallery-view'
+let g:netrw_dirhist_0='C:/Data/Solutions/TradeMe.FrEnd/packages/frend/web/client/src/app/Property/listing/gallery-view/gallery-carousel-item'
+let g:netrw_dirhist_9='C:/Data/Solutions/TradeMe.FrEnd/packages/frend/web/client/src/app/Property/listing/gallery-view'
+let g:netrw_dirhist_8='C:\Data\Solutions\TradeMe.FrEnd\packages\frend\web\client\src\app\Property\listing\gallery-view\gallery-carousel'
+let g:netrw_dirhist_7='C:/Data/Solutions/TradeMe.FrEnd/packages/frend/web/client/src/app/Property/listing/gallery-view/gallery-carousel-item'
+let g:netrw_dirhist_6='C:\Data\Solutions\TradeMe.FrEnd\packages\frend\web\client\src\app\Property\listing\gallery-view\gallery-carousel-item'
+let g:netrw_dirhist_5='C:/Data/Solutions/TradeMe.FrEnd/packages/frend/web/client/src/app/Property/listing/gallery-view/gallery-carousel-item'
+let g:netrw_dirhist_4='C:\Data\Solutions\TradeMe.FrEnd\packages\frend\web\client\src\app\Property\listing\gallery-view\gallery-carousel-item'
+let g:netrw_dirhist_3='C:/Data'

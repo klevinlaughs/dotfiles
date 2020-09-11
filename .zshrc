@@ -105,7 +105,12 @@ source $ZSH/oh-my-zsh.sh
 unsetopt BEEP
 export STEAM_FRAME_FORCE_CLOSE=1 
 
-source /home/kelvin/.config/broot/launcher/bash/br
+source ~/.config/broot/launcher/bash/br
 source /usr/share/nvm/init-nvm.sh
 alias dit='/usr/bin/git --git-dir=/home/kelvin/.cfg/ --work-tree=/home/kelvin'
 export STARSHIP_CONFIG=~/.config/starship
+
+if command -v exa &> /dev/null
+then
+  alias ls=exa
+fi

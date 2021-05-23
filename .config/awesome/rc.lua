@@ -52,7 +52,7 @@ end
 
 -- TODO: exec autorun
 -- awful.spawn.with_shell("~/.config/awesome/autorun.sh")
-awful.spawn.with_shell(string.format("%s/.config/awesome/autorun.sh", os.getenv("HOME")))
+-- awful.spawn.with_shell(string.format("%s/.config/awesome/autorun.sh", os.getenv("HOME")))
 -- This function will run once every time Awesome is started
 -- local function run_once(cmd_arr)
     -- for _, cmd in ipairs(cmd_arr) do
@@ -92,7 +92,7 @@ local themes = {
 local chosen_theme = themes[6]
 local modkey       = "Mod4"
 local altkey       = "Mod1"
-local terminal     = "termite"
+local terminal     = "alacritty"
 local vi_focus     = false -- vi-like client focus - https://github.com/lcpz/awesome-copycats/issues/275
 local cycle_prev   = false -- cycle trough all previous client or just the first -- https://github.com/lcpz/awesome-copycats/issues/274
 local editor       = os.getenv("EDITOR") or "nvim"

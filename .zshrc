@@ -73,7 +73,7 @@ plugins=(
         asdf
 )
 
-source $ZSH/oh-my-zsh.sh
+#source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -100,15 +100,19 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-# eval "$(starship init zsh)"
+
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+eval "$(starship init zsh)"
 
 unsetopt BEEP
 export STEAM_FRAME_FORCE_CLOSE=1 
 
-source ~/.config/broot/launcher/bash/br
-source /usr/share/nvm/init-nvm.sh
-alias dit='/usr/bin/git --git-dir=/home/kelvin/.cfg/ --work-tree=/home/kelvin'
-export STARSHIP_CONFIG=~/.config/starship
+#source ~/.config/broot/launcher/bash/br
+
+alias dit='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+export NVS_HOME="$HOME/.nvs"
+[ -s "$NVS_HOME/nvs.sh" ] && . "$NVS_HOME/nvs.sh"
 
 if command -v exa &> /dev/null
 then
